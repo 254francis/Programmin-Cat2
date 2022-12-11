@@ -18,3 +18,32 @@ int main(){
   
    return 0;
 }
+// side note even numbers are divisible by 2 hence:(create and call function also function uses modular approach)
+bool checkEven(int num){
+   bool b;
+   /* If number is perfectly divisible by 2 then it is
+    * an even number else it is an odd number*/
+   if (num % 2 == 0)
+      b=true;
+   else 
+      b=false;
+
+   return b;
+}
+
+// part 2
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+
+int num1,num2,num3;
+
+cin>>num1>>num2>>num3;
+
+cout<<"max = "<<max(num1,max(num2,num3));
+
+}
